@@ -1,4 +1,6 @@
 easy_admin:
+    security:
+        enable_authenticate: true
     site_name: 'GROUPIMMO'
     design:
         assets:
