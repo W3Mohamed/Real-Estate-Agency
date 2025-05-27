@@ -39,4 +39,32 @@ document.addEventListener('turbo:load', function() {
         window.addEventListener('scroll', animateOnScroll);
         animateOnScroll(); // Trigger on load
     }
+
+    if (document.getElementById('properties-for-sale')) {
+        new Splide('#properties-for-sale', {
+            type: 'loop',
+            perPage: 3,
+            perMove: 1,
+            gap: '1.5rem',
+            breakpoints: {
+                1024: { perPage: 2 },
+                768: { perPage: 1 }
+            }
+        }).mount();
+    }
+    
+    // Carrousel à louer
+    if (document.getElementById('properties-for-rent')) {
+        new Splide('#properties-for-rent', {
+            type: 'loop',
+            perPage: 3,
+            perMove: 1,
+            gap: '1.5rem',
+            breakpoints: {
+                1024: { perPage: 2 },
+                768: { perPage: 1 }
+            }
+        }).mount();
+    }
+
 });
