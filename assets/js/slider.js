@@ -73,7 +73,7 @@ function initializeAll() {
     initAllCarousels();
     initScrollAnimations();
 }
-
+console.log('fichier slider chargé');
 // Écouteurs d'événements
 document.addEventListener('turbo:load', initializeAll);
 document.addEventListener('DOMContentLoaded', initializeAll);
