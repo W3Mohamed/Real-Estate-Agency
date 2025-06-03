@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}GROUPIMMO - Agence Immobilière en Algérie{% endblock %}</title>
-    {% block meta_description %}
-        <meta name="description" content="GROUPIMMO, votre agence immobilière de confiance en Algérie">
-    {% endblock %}
+    <meta name="description" content="{% block meta_description %}GROUPIMMO, votre agence immobilière de confiance en Algérie, en Belgique et au Luxembourg. Découvrez des biens à vendre ou à louer adaptés à vos besoins.{% endblock %}">
     <link rel="icon" type="image/x-icon" href="{{ asset('img/logo.png')}}">
     <!-- Tailwind CSS -->
     <script src="{{ asset('js/slider.js') }}"></script>
